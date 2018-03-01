@@ -5,21 +5,24 @@
     -o-background-size: cover;
     background-size: cover;
     height:1000px;
-    padding-left: 98px !important;
-    padding-right: 98px !important;
+    padding-top:24px;
+    padding-left: 93px !important;
+    padding-right: 93px !important;
 }
 .top-section a{
     color:#FFF !important;
+    font-family: 'Arial';
+    font-weight:700;
 }
 .top-section .navbar-brand{
-    font-size: 64px;
+    font-size: 92px;
 }
 .top-section .nav-link{
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 14px;
 }
 .x-sign{
-    font-size: 8px;
+    font-size: 12px;
     margin-right:9px;
     color: #ae9850;
     border: 1px solid #ae9850;
@@ -29,17 +32,41 @@
     margin-right: 14px;
     color: #8b7a40;
 }
+.social {
+    position:relative;
+    top:-41px;
+}
 .social i {
     color: #8b7a40;
     border-radius: 100%;
-    font-size: 18px;
-    height: 36px;
-    line-height: 32px;
-    margin-right: 16px;
+    font-size: 16px;
+    height: 31px;
+    line-height: 28px;
+    margin-right: 10px;
     text-align: center;
-    width: 36px;
+    width: 31px;
     border: 2px solid #8b7a40;
     background-color: #000;
+}
+.intro-text{
+    padding:34px;
+    width:584px;
+    height:567px;
+    position:absolute;
+    top:273px;
+    left:156px;
+    background-color: #181818;
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(139,122,64,1);
+-moz-box-shadow: 0px 0px 18px 2px rgba(139,122,64,1);
+box-shadow: 0px 0px 18px 2px rgba(139,122,64,1);
+}
+.intro-text>h1{
+    color:#FFF;
+    font-size: 48.637px;
+    line-height: 1.121;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.84);
 }
 
   
