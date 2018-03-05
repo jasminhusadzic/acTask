@@ -125,4 +125,17 @@ nav {
     padding: 21px 89px;
     margin-top:44px;
 }
-  
+.first {
+    height:700px;
+    width: 370px;
+    background: url(../img/test.png) no-repeat top center;
+    margin-top:40px;
+}
+.second {
+    background: url(../img/second.png) no-repeat top center;
+}
+.third {
+    height:700px;
+    background: url(../img/third.png) no-repeat top center;
+    margin-top:40px;
+}
