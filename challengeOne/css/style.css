@@ -45,6 +45,7 @@ nav {
 .social {
     position:relative;
     top:-41px;
+    z-index: 63;
 }
 .social i {
     color: #8b7a40;
@@ -153,5 +154,14 @@ nav {
     box-shadow: 0px 0px 58px -6px rgba(0,0,0,0.75);
 }
 .middle-section{
+    position:relative;
     top:-44px;
+    z-index: 150;
+}
+@media screen and (max-width:991px){
+    .social {
+        top:1px;
+
+    }
+
 }
