@@ -3,6 +3,9 @@
     font-family: Myriad;
     src: url(../fonts/MyriadProRegular.ttf);
 }
+html{
+    font-size: 16px;
+}
 nav {
     z-index: 100;
 }
@@ -185,6 +188,30 @@ nav {
     font-family: 'Myriad';
     font-size: 1em;
     padding-bottom: 10%;
+}
+.price{
+    font-family: 'Myriad';
+    font-size: 4.75em;
+    color:#c52525;
+    vertical-align: text-bottom;   
+}
+.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .price{
+    color:#47a238;
+}
+.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .price{
+    color:#2a5fa8;
+}
+
+.price>span{
+    position: relative;
+}
+.price>span>span{
+    position: absolute;
+    bottom:15%;
+    right:10%;
+    font-size: 0.236em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 @media screen and (max-width:991px){
     .social {
