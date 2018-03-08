@@ -154,6 +154,7 @@ nav {
     min-height: 332px; 
 }
 .second {
+    position: relative;
     background: url(../img/second.png) no-repeat top center;
     background-size: 100% 100%;
     padding: 50px 33px 35px 33px;
@@ -165,6 +166,12 @@ nav {
     padding: 10px 33px 35px 33px;
     min-height: 332px;
 
+}
+.second>img {
+    position: absolute;
+    top:-7px;
+    right:5px;
+    max-width: 25%;
 }
 .first h3,.second h3,.third h3 {
     color: #FFF;
