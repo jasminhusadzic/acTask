@@ -10,7 +10,7 @@ nav {
     z-index: 100;
 }
 .top-section{
-    background: url(../img/Layer44.png) no-repeat center center;
+    background: url(../img/front-bg.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -135,55 +135,60 @@ nav {
     z-index: 150;
 }
 .middle-section>.row>.col-md-4>.col-md-12{
-    height:700px;
+
     -webkit-box-shadow: 0px 0px 58px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 58px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 58px -6px rgba(0,0,0,0.75);
     margin-top:55px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12{
     margin-top:0;
-    height:800px;
+
 }
-.middle-section>.row>.col-md-4>.col-md-12>.first>.col-md-12>img,
-.middle-section>.row>.col-md-4>.col-md-12>.second>.col-md-12>img,
-.middle-section>.row>.col-md-4>.col-md-12>.third>.col-md-12>img{
+.middle-section>.row>.col-md-4>.col-md-12>.red-section>.col-md-12>img,
+.middle-section>.row>.col-md-4>.col-md-12>.green-section>.col-md-12>img,
+.middle-section>.row>.col-md-4>.col-md-12>.blue-section>.col-md-12>img{
     max-width: 70px;
 }
-.first {
-    background: url(../img/test.png) no-repeat top center;
-    background-size: 100% 100%;
-    padding: 10px 33px 35px 33px;
-    min-height: 332px; 
-}
-.second {
-    position: relative;
-    background: url(../img/second.png) no-repeat top center;
-    background-size: 100% 100%;
-    padding: 50px 33px 35px 33px;
-    min-height: 380px;
-}
-.third {
-    background: url(../img/third.png) no-repeat top center;
+.red-section {
+    background: url(../img/red-section.png) no-repeat top center;
     background-size: 100% 100%;
     padding: 10px 33px 35px 33px;
     min-height: 332px;
+    margin: 0 !important; 
+}
+.green-section {
+    position: relative;
+    background: url(../img/green-section.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 50px 33px 35px 33px;
+    min-height: 380px;
+    margin: 0 !important; 
+}
+.blue-section {
+    background: url(../img/blue-section.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 10px 33px 35px 33px;
+    min-height: 332px;
+    margin: 0 !important; 
 
 }
-.second>img {
+.green-section>img {
     position: absolute;
     top:-7px;
     right:5px;
     max-width: 25%;
 }
-.first h3,.second h3,.third h3 {
+.red-section h3,.green-section h3,.blue-section h3 {
     color: #FFF;
     text-transform: uppercase;
     font-family: 'Myriad';
     font-size: 1.5em;
     margin-top: 5%;
 }
-.first p,.second p,.third p{
+.red-section p,.green-section p,.blue-section p{
     color: #FFF;
     font-family: 'Myriad';
     font-size: 1em;
@@ -195,13 +200,28 @@ nav {
     color:#c52525;
     vertical-align: text-bottom;   
 }
-.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .price{
+.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .price,
+.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .offer-heading{
     color:#47a238;
 }
-.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .price{
+.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .price,
+.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .offer-heading{
     color:#2a5fa8;
 }
-
+.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .offer-heading hr {
+    background-color: #47a238;
+}
+.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .offer-heading hr {
+    background-color: #2a5fa8;
+}
+.middle-section>.row>.col-md-4:nth-of-type(2n)>.col-md-12 .offer-content table td i {
+    color: #47a238;
+    border-color: #47a238;
+}
+.middle-section>.row>.col-md-4:nth-of-type(3n)>.col-md-12 .offer-content table td i  {
+    color: #2a5fa8;
+    border-color: #2a5fa8;
+}
 .price>span{
     position: relative;
 }
@@ -213,6 +233,28 @@ nav {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
+.offer-heading{
+    color:#c52525;
+    text-transform: uppercase;
+    font-family: 'Myriad';
+    font-size: 1.5em;
+}
+.offer-heading hr {
+    background-color: #c52525;
+    height: 1px;
+    border: 0;
+}
+.offer-content table td{
+    border:none;
+    color: #a0a0a0;
+    font-family: 'Myriad';
+    font-size: 0.875em;
+}
+.offer-content table td i {
+    color:#c52525;
+    border-color:#c52525;
+}
+
 @media screen and (max-width:991px){
     .social {
         top:1px;
