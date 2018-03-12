@@ -315,7 +315,6 @@ button:hover{
     background-color: #b79c46;
     border-color: #b79c46;
 }
-
 @media screen and (max-width:991px){
     .social {
         top:1px;
