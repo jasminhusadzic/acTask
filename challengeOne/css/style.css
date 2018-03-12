@@ -272,9 +272,35 @@ nav {
     margin: 10px 0 30px 0;
 }
 .bottom-section{
+    font-family: 'Myriad';
     background: url(../img/bottom-bg.png) no-repeat top center;
     background-size: 100% 100%;
     min-height: 546px;
+    padding-top: 120px;
+}
+.bottom-section p:first-child{
+    text-transform: uppercase;
+    font-size: 3.04em;
+    color: #b79c46;
+}
+.bottom-section p:nth-child(2n){
+    font-size: 1.125em;
+}
+.bottom-section input[type='text'],
+.bottom-section input[type='email']{
+    background-color: transparent;
+    border-radius: 0;
+    border-top: none;
+    border-color: #000;
+}
+.bottom-section button {
+    background-color: #b79c46;
+    border-color: #b79c46;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 1.5em;
+    padding: 25px 20px;
+    margin-top:20px;
 }
 
 @media screen and (max-width:991px){
