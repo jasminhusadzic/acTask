@@ -297,6 +297,11 @@ button:hover{
     border-top: none;
     border-color: #000;
 }
+.bottom-section input::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color:#000;
+    font-size: 0.875em;
+}
 .bottom-section button {
     background-color: #b79c46;
     border-color: #b79c46;
