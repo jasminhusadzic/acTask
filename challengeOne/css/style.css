@@ -156,6 +156,40 @@ button:hover{
 .middle-section>.row>.col-md-4>.col-md-12>.blue-section>.col-md-12>img{
     max-width: 70px;
 }
+.md-left-section{
+    float: left;
+    max-width:100px;
+    font-family: 'Myriad';
+    margin-left: 115px;
+    margin-top: 240px;
+  
+}
+.square-left{
+    width:100px;
+    height: 100px;
+    position: relative;
+    background-color: #000;
+    color: #ae9850;
+    font-size: 5em;
+}
+.square-left>div{
+    position: absolute;
+    top: -35px;
+}
+.square-text{
+    margin-top: 25px;
+    border-left:5px solid #000;
+    padding-left: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1.121;
+    transform: rotate(90deg);
+}
+.square-text>p{
+    width:420px; 
+    height: 100%;
+    margin: 0;  
+}
 .red-section {
     background: url(../img/red-section.png) no-repeat top center;
     background-size: 100% 100%;
