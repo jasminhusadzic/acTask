@@ -326,10 +326,17 @@ button:hover{
 }
 .bottom-section input[type='text'],
 .bottom-section input[type='email']{
-    background-color: transparent;
-    border-radius: 0;
-    border-top: none;
-    border-color: #000;
+background: linear-gradient(#000, #000), linear-gradient(#000, #000), linear-gradient(#000, #000);
+  background-size: 1px 50%, 100% 1px, 1px 50%;
+  background-position: bottom left, bottom center, bottom right;
+  background-repeat: no-repeat;
+  border: none;
+  color: #000;
+  border-radius: 0;
+}
+.bottom-section input[type='text']:focus,
+.bottom-section input[type='email']:focus{
+   box-shadow: none;
 }
 .bottom-section input::placeholder{
     font-family: 'Oswald', sans-serif;
@@ -352,6 +359,10 @@ button:hover{
 @media screen and (max-width:991px){
     .social {
         top:1px;
+    }
+    .nav-link{
+        background-color: rgba(0, 0, 0, 0.84);
+        padding-left: 10px !important;
     }
 
 }
