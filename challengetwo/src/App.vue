@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <string></string>
-    
+    <email></email>
   </div>
 </template>
 
 <script>
 import String from './components/string'
+import Email from './components/email'
 export default {
   name: 'App',
   components:{
-    String
+    String,
+    Email        
   }
 }
 </script>
