@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <string></string>
-    <email></email>
+    <dynamicForm>
+      
+    </dynamicForm>
   </div>
 </template>
 
 <script>
-import String from './components/string'
+import DynamicForm from './components/dynamicForm'
 import Email from './components/email'
 export default {
   name: 'App',
   components:{
-    String,
-    Email        
+    DynamicForm,
+    Email   
   }
 }
 </script>

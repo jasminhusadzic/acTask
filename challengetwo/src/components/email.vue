@@ -1,31 +1,14 @@
 <template>
 <div class="row">
-    <div v-bind:class="emailCol()">
-        <label>{{email.label}}</label>
-        <input type="email" v-bind:value='email.value'>
+    <div v-if="component.component=='email'" v-bind:class="component.col" class="form-group">
+        <label for="exampleFormControlInput1">{{component.label}}</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" v-bind:value="component.value">
     </div>
 </div>
 </template>
 <script>
 export default {
-  name:'email',
-  data(){
-      return{
-        email:{
-            "label": "Email",
-            "name": "email",
-            "value": null,
-            "component": "email",
-            "col": 6
-        }
-    }
-  },
-  methods : {
-      emailCol(){
-          var col = this.email.col;
-          return "col-md-" + col;
-      }
-  }
+  name:'email'
 }
 </script>
 
