@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <dynamicForm>
-      
-    </dynamicForm>
-  </div>
+    <div class="container">
+        <dynamicForm></dynamicForm>
+      </div>
+    </div>
 </template>
 
 <script>
