@@ -2,8 +2,8 @@
   <div id="app">
     <div class="container">
         <dynamicForm></dynamicForm>
-      </div>
     </div>
+  </div>
 </template>
 
 <script>
