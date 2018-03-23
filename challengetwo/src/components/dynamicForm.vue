@@ -15,8 +15,8 @@
             <div v-if="component.component=='radio'" v-bind:id="component.name" v-bind:class="dynamicClass(component)">
                 <label class="form-check-label" v-bind:for="component.name">{{component.label}}</label>
                 <div v-for="option in component.options" v-bind:key="option.id" class="form-check">
-                    <div v-for="radio in option" v-bind:key="radio.id"> 
-                        <input type="radio" v-bind:name="component.name" v-bind:id="radio" v-bind:value="radio">
+                    <div v-for="(radio,key) in option" v-bind:key="radio.id"> 
+                        <input type="radio" v-bind:name="component.name" v-bind:id="key" :value="radio">
                         <label v-bind:for="radio">{{radio}}</label>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
             </div>
         </div>
         <button type="submit">Submit</button>
-        
+
     </form>
 </template>
 <script>
@@ -71,14 +71,18 @@ export default {
             }   
         },
         submitForm(e){
-            var results = e.target.elements;
-            console.log(results);
-            for (var i in results){
-                console.log(results[i])
-                if (results[i].value){
-                console.log(results[i].value);
+         console.log(e);
+            var results = e.target;
+           //console.log(results);
+            for (var i=0; i<results.length-1;i++){
+               if (results[i]){
+                   if(results[i].defaultChecked == false || results[i].checked)
+                    console.log(results[i].value);   
+                }else{
+                    console.log('cao');
+                    break;
                 }
-            }    
+            }   
         }
     }
 }
