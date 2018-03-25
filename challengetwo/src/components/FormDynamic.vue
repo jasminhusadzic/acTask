@@ -36,15 +36,13 @@ export default {
   methods:{
       submitForm(e){
          console.log(e);
-            var results = e.target;
-           //console.log(results);
-            for (var i=0; i<results.length-1;i++){
-               if (results[i]){
-                   if(results[i].defaultChecked == false || results[i].checked)
-                    console.log(results[i].value);   
+            var data = e.target;
+            for (var i=0; i<data.length-1;i++){
+               if (data[i].value){
+                
+                    console.log(data[i].value);   
                 }else{
-                    console.log('cao');
-                    break;
+                    console.log('Sva polja moraju biti upisana');break;
                 }
             }   
         }
