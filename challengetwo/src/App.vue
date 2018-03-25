@@ -1,20 +1,25 @@
 <template>
   <div id="app">
     <div class="container">
-        <dynamicForm></dynamicForm>
+        <app-form  v-bind:formData="formData"></app-form>
     </div>
   </div>
 </template>
 
 <script>
-import DynamicForm from './components/dynamicForm'
-import Email from './components/email'
+import FormDynamic from './components/FormDynamic'
+import formData from './assets/sample.json'
 export default {
   name: 'App',
   components:{
-    DynamicForm,
-    Email   
+    'app-form':FormDynamic   
+  },
+  data(){
+    return{
+      formData
+    }
   }
+   
 }
 </script>
 

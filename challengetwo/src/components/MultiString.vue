@@ -1,9 +1,9 @@
 <template>
 <div class="row">
-    <!-- Email -->
-    <div v-for="component in formData" v-bind:key="component.id" v-if="component.component=='email'" v-bind:id="component.name" class="form-group"  v-bind:class="dynamicClass(component)">
-        <label v-bind:for="component.name">{{component.label}}</label>
-        <input type="email" v-bind:name="component.name" v-bind:id="component.name" class="form-control"  v-model="component.value">
+    <!-- Multi String -->
+    <div v-for="component in formData" v-bind:key="component.id" v-if="component.component=='multi_string'" v-bind:id="component.name" class="form-group"  v-bind:class="dynamicClass(component)">
+        <label v-bind:for="component.name">{{component.label}}:</label>
+        <input type="text" v-bind:id="component.name" class="form-control" v-model="component.value">
     </div> 
 </div>
 </template>
@@ -11,7 +11,7 @@
 
 export default {
     props:['formData'],
-    name:'Email',
+    name:'MultiString',
     data(){
         return{
             
