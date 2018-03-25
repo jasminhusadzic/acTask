@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent="submitForm">
         <app-string v-bind:formData="formData"></app-string>
         <app-email v-bind:formData="formData"></app-email>
         <app-radio v-bind:formData="formData"></app-radio>
@@ -32,6 +32,22 @@ export default {
   data(){
       return {  
       }
+  },
+  methods:{
+      submitForm(e){
+         console.log(e);
+            var results = e.target;
+           //console.log(results);
+            for (var i=0; i<results.length-1;i++){
+               if (results[i]){
+                   if(results[i].defaultChecked == false || results[i].checked)
+                    console.log(results[i].value);   
+                }else{
+                    console.log('cao');
+                    break;
+                }
+            }   
+        }
   }
 }
 </script>
