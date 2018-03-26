@@ -35,18 +35,46 @@ export default {
   },
   methods:{
       submitForm(e){
-         console.log(e);
+
             var data = e.target;
+            var results = [];   
+            var json = [];
+            var counter = 0;
             for (var i=0; i<data.length-1;i++){
-               if (data[i].value){
-                
-                    console.log(data[i].value);   
-                }else{
-                    console.log('Sva polja moraju biti upisana');break;
+                if(!data[i].value && data[i].type !=='radio') {
+                    alert('Please insert all data');break;
                 }
-            }   
+                else if (data[i].value && data[i].type !=='radio'){
+                   results.push(data[i].value);  
+                }else if(data[i].checked){
+                    results.push(data[i].value);
+                    counter++;
+                }
+            }
+            for(var i=0; i < results.length;i++){
+                json.push({
+                    "first_name": results[0],
+                    "last_name": results[1],
+                    "email":results[2] ,
+                    "gender": results[3],
+                    "source_of_attention":results[4],
+                    "phone": {
+                        "ext": results[5],
+                        "phone": results[6], 
+                        },
+                    "vouchers": [
+                    results[7],
+                    ]
+                         });
+                if( counter == 0){
+                     alert('Please insert all data');
+                     json = [];
+                }else{
+                    console.log(json); // Output
+                }break;
+            }
         }
-  }
+    }
 }
 </script>
 
