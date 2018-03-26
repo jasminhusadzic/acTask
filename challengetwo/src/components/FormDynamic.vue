@@ -70,7 +70,7 @@ export default {
                      alert('Please insert all data');
                      json = [];
                 }else{
-                    console.log(json); // Output
+                    console.log(JSON.stringify(json)); // Output
                 }break;
             }
         }
